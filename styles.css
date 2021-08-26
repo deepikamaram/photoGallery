@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+input {
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 4px;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.main-gallery {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 2rem 2rem;
+}
+
+a img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 57%;
+  }
+}
